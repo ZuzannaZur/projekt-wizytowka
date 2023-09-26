@@ -4,6 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My project</title>
-  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Wizytówka</title>
+  <link href="style.css" rel="text/css" type="stylesheet">
+  <link href="normalize.css" rel="stylesheet" type="stylesheet">
 </head>
+<body>
+    <main class="main">
+        <article class="person">
+          <img
+            class="person__picture"
+            src="avatar.png"
+            alt="Zdjęcie imie i naziwsko"
+          />
+          <header class="person__info">
+            <h1 class="person__name">Zuzanna Żur</h1>
+            <p class="person__position">Uczeń</p>
+          </header>
+          <p class="person__description person__description--with-margin">
+            Programista z <strong class="special"> doświadczeniem</strong>,
+            fotograf, operator drona, właściciel Sokoła Millennium (na razie tylko
+            z Lego), <strong class="special">prelegent i szkoleniowiec</strong>.
+            Uwielbia eksperymentować z nowymi technologiami, w swojej twórczości
+            ocierając się o sztukę.
+          </p>
+          <p class="person__description">
+            W sieci: <a class="person__link" href="#">Facebook</a>,
+            <a class="person__link" href="#">GitHub</a>,
+            <a class="person__link" href="#">Instagram</a>.
+          </p>
+        </article>
+      </main>
+    </body>
+  </html>
+
+</body>
+</html>
