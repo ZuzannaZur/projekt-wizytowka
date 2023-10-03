@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stickman Jump Game</title>
+    <style>
+        #game-container {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            border: 1px solid black;
+        }
+        #stickman {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 20px;
+            height: 50px;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="stickman"></div>
+    </div>
+    <script>
+        const stickman = document.getElementById('stickman');
+        let jumping = false;
+
+        // Function to make the stickman jump
+        function jump() {
+            if (!jumping) {
+                jumping = true;
+                let jumpHeight = 0;
+                const jumpInterval = setInterval(() => {
+                    if (jumpHeight >= 100) {
+                        clearInterval(jumpInterval);
+                        setTimeout(() => {
+                            const fallInterval = setInterval(() => {
+                                const currentBottom = parseInt(getComputedStyle(stickman).bottom);
+                                if (currentBottom > 0) {
+                                    stickman.style.bottom = (currentBottom - 5) + 'px';
+                                } else {
+                                    clearInterval(fallInterval);
+                                    jumping = false;
+                                }
+                            }, 20);
+                        }, 100);
+                    } else {
+                        const currentBottom = parseInt(getComputedStyle(stickman).bottom);
+                        stickman.style.bottom = (currentBottom + 5) + 'px';
+                        jumpHeight += 5;
+                    }
+                }, 20);
+            }
+        }
+
+        // Listen for spacebar press to jump
+        document.addEventListener('keydown', (event) => {
+            if (event.keyCode === 32) { // Spacebar keycode
+                jump();
+            }
+        });
+    </script>
+</body>
+</html>
