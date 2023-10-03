@@ -80,3 +80,38 @@ html {
       color:#7A0895;
       font-weight:200px;
   }
+
+  .yes {
+    width: 10em;
+    height: 5ex;
+    background-color: #582bdf39;
+    border: 2px solid #592BDF;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  
+  .yes:hover {
+    background-color: rgba(30, 0, 255, 0.56);
+  }
+
+  .no {
+    width: 10em;
+    height: 5ex;
+    background-color: #582bdf40;
+    border: 2px solid #592BDF;
+    border-radius: 10px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+
+  .no:hover {
+    background-color: rgba(30, 0, 255, 0.56);
+  }
+
+  .you-like__it {
+    font-weight: 200px;
+    
+  }
