@@ -35,6 +35,16 @@ html {
   .person__info {
       margin-bottom: 24px;
   }
+
+  .page-header__button {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    font-weight: 700;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 2px;
+
+  }
   
   .person__link {
       color: #dd0404;
@@ -48,7 +58,7 @@ html {
   }
   
   .person__position {
-      font-size: 18px;
+      font-size: 16px;
       color: #545454;
       margin: 0;
       font-style: italic;
