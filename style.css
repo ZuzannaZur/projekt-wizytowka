@@ -43,14 +43,17 @@ html {
       background-image: linear-gradient(to right, #AA076B 0%, #61045F  51%, #AA076B  100%);
       margin: 10px;
       padding: 15px 45px;
+      font-weight: 100;
+      font-size:15px;
       text-align: center;
       text-transform: uppercase;
       transition: 0.5s;
       background-size: 200% auto;
-      color: white;            
+      color: rgb(0, 0, 0);            
       box-shadow: 0 0 20px #eee;
       border-radius: 10px;
       display: block;
+      font-family:'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
     }
 
     .page-header__button:hover {
